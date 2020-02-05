@@ -1,73 +1,54 @@
-
-
-
-body {
- background: url(12_col.gif)center top repeat-y;
-	background-size:90%;
-   
-     
-}
-
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-    .wrapper > * {
-        border: 2px solid black;
-        height:200px;
-        margin:5px;
-        
-      
-        
+body {
+  background: url(12_col.gif) center top repeat-y;
+  background-size:90%;  
+}
 
-    }
-
+[class*="cell"] {
+  border: 1px solid #333;
+}
 
 .wrapper {
   width:90%;
+  margin: 20px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 100px;
-  grid-gap: 2px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  grid-gap: 2%;
   grid-template-areas:
-      "header header header header header header"
-      "left  main  main main main main right"
-      "content  content content content  side side"
-      "footer footer footer footer footer footer";
+      "header header header header header header header header header header header header"
+      "left left main main main main main main main main right right"
+      "content content content content content content content content content side side side"
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
 
 
 .cell-1 {
   grid-area: header;
-  grid-column:1/7;
-  
 }
 
 .cell-2{
   grid-area:left;
-  grid-column:1/2;
 }
 .cell-3{
   grid-area:main;
-  grid-column:2/6;
 }
 .cell-4{
   grid-area:right;
-  grid-column:6/7;
 }
 .cell-5{
   grid-area:content;
-  grid-column:1/6;
 }
 .cell-6{
   grid-area:side;
-  grid-column:6/-1;
 }
 .cell-7{
   grid-area:footer;
-  grid-column:1/7;
 }
 
    
@@ -85,13 +66,15 @@ body {
 
 
 /*Större skärmar*/
-@media  (min-width:1280px){
+/*@media  (min-width:1200px){
       .wrapper{
       display:grid;
       margin:70px;
       height:50px;
-      grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: auto 1fr ;
+
+      grid-gap: 1% 1%;
       grid-template-areas:
         "header header header header header header"
         "left main  main   main main right"
@@ -101,7 +84,7 @@ body {
 }
 
  /*Ipad Pro 12.9*/
-  @media  (max-width: 1024px){
+ /* @media  (max-width: 1024px){
     .wrapper{
       
       display:grid;
@@ -118,7 +101,7 @@ body {
 }
 
 /*Ipad*/
-  @media (max-width: 768px){
+  /*@media (max-width: 768px){
     .wrapper{
       display:grid;
       margin:30px;
@@ -134,7 +117,7 @@ body {
   }
 
 /*mobil*/
-  @media (max-width: 560px){
+  /*@media (max-width: 560px){
     .wrapper{
       display:grid;
       grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
