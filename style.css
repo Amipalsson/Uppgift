@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> 74c21558efc5ef0ccb86cbe70fc3c43e6da85a21
 *, *:before, *:after {
    box-sizing: border-box;
 }
@@ -14,11 +9,11 @@ body {
 }
 
 [class*="cell"] {
-<<<<<<< HEAD
+
   border: 2px solid #333;
-=======
+
   border: 1px solid #333;
->>>>>>> 74c21558efc5ef0ccb86cbe70fc3c43e6da85a21
+
 }
 
 .wrapper {
@@ -57,14 +52,12 @@ body {
 }
 .cell-7{
   grid-area:footer;
-<<<<<<< HEAD
   display: grid;
-   grid-template-columns: 2fr 2fr 2fr 2fr;
-   grid-gap:2%;
-   grid-template-areas: 
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-gap:2%;
+  grid-template-areas: 
    "footera footerb footerc footerd"
-=======
->>>>>>> 74c21558efc5ef0ccb86cbe70fc3c43e6da85a21
+
 }
 .cell-8 {
   grid-area:footera;
@@ -79,7 +72,6 @@ body {
   grid-area:footerc;
   margin:10px;
 
-<<<<<<< HEAD
 }
 .cell-11{
   grid-area:footerd;
@@ -93,7 +85,7 @@ body {
 
 
 /*Större skärmar*/
-/*@media  (min-width:1200px){
+@media  (min-width:1200px){
       .wrapper{
       display:grid;
       margin:70px;
@@ -111,8 +103,8 @@ body {
 }
 
  /*Ipad Pro 12.9*/
- /* @media  (max-width: 1024px){
->>>>>>> 74c21558efc5ef0ccb86cbe70fc3c43e6da85a21
+  @media  (max-width: 1024px){
+
     .wrapper{
       display:grid;
       grid-gap:2%;
@@ -128,7 +120,7 @@ body {
 }
 
 /*Ipad*/
-  /*@media (max-width: 768px){
+  @media (max-width: 768px){
     .wrapper{
       display:grid;
       grid-gap:2%;
@@ -155,10 +147,7 @@ body {
 /*mobil*/
 <<<<<<< HEAD
   @media (max-width:480px){
-=======
-  /*@media (max-width: 560px){
->>>>>>> 74c21558efc5ef0ccb86cbe70fc3c43e6da85a21
-    .wrapper{
+   .wrapper{
       display:grid;
       grid-template-columns:1fr 1fr 1fr 1fr ;
       grid-template-rows:repeat(11, 100px);
