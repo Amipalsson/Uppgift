@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 74c21558efc5ef0ccb86cbe70fc3c43e6da85a21
 *, *:before, *:after {
    box-sizing: border-box;
 }
@@ -11,7 +14,11 @@ body {
 }
 
 [class*="cell"] {
+<<<<<<< HEAD
   border: 2px solid #333;
+=======
+  border: 1px solid #333;
+>>>>>>> 74c21558efc5ef0ccb86cbe70fc3c43e6da85a21
 }
 
 .wrapper {
@@ -50,11 +57,14 @@ body {
 }
 .cell-7{
   grid-area:footer;
+<<<<<<< HEAD
   display: grid;
    grid-template-columns: 2fr 2fr 2fr 2fr;
    grid-gap:2%;
    grid-template-areas: 
    "footera footerb footerc footerd"
+=======
+>>>>>>> 74c21558efc5ef0ccb86cbe70fc3c43e6da85a21
 }
 .cell-8 {
   grid-area:footera;
@@ -69,6 +79,7 @@ body {
   grid-area:footerc;
   margin:10px;
 
+<<<<<<< HEAD
 }
 .cell-11{
   grid-area:footerd;
@@ -78,6 +89,30 @@ body {
 
 /*Ipad Pro 12.9*/
   @media  (max-width: 1024px){
+=======
+
+
+/*Större skärmar*/
+/*@media  (min-width:1200px){
+      .wrapper{
+      display:grid;
+      margin:70px;
+      height:50px;
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr ;
+
+      grid-gap: 1% 1%;
+      grid-template-areas:
+        "header header header header header header"
+        "left main  main   main main right"
+        "content content content content side side"
+        "footer footer footer footer footer footer";
+    }
+}
+
+ /*Ipad Pro 12.9*/
+ /* @media  (max-width: 1024px){
+>>>>>>> 74c21558efc5ef0ccb86cbe70fc3c43e6da85a21
     .wrapper{
       display:grid;
       grid-gap:2%;
@@ -93,7 +128,7 @@ body {
 }
 
 /*Ipad*/
-  @media (max-width: 768px){
+  /*@media (max-width: 768px){
     .wrapper{
       display:grid;
       grid-gap:2%;
@@ -118,7 +153,11 @@ body {
     }
 }
 /*mobil*/
+<<<<<<< HEAD
   @media (max-width:480px){
+=======
+  /*@media (max-width: 560px){
+>>>>>>> 74c21558efc5ef0ccb86cbe70fc3c43e6da85a21
     .wrapper{
       display:grid;
       grid-template-columns:1fr 1fr 1fr 1fr ;
